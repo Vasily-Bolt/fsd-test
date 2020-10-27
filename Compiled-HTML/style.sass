@@ -1,0 +1,47 @@
+@import ./_variables
+  
+body
+  width: 1440px
+  height: 900px
+  border: 1px solid #000
+  margin: 0 auto
+  display: grid
+  grid-template-columns: 150px 1fr 191px
+  grid-template-rows: 145px 1fr 145px
+
+.wrapper
+  grid-column: 2/3
+  grid-row: 2/3
+  border: 1px solid #000
+  display: grid
+  grid-template: repeat(7,1fr) / repeat(2, 1fr)
+  grid-auto-flow: column
+  grid-row-gap: 20px
+
+.TCAS-cont
+  display: flex
+
+.TCAS-cont__left
+
+.TCAS-cont__left__square
+  height: 70px
+  width: 70px
+  border-radius: 6px
+  background: #000
+
+.TCAS-cont__left__text-block
+.TCAS-cont__right
+.TCAS-cont__right__title
+.TCAS-cont__right__text
+
+.dark-shade-total
+.dark-shade-almost-total
+.dark-shade-half
+.dark-shade-quater
+.dark-shade-light
+.purple
+.green
+.body-head1
+.body-head2
+.body-head3
+.body
