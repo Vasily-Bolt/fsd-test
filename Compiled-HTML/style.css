@@ -1,39 +1,40 @@
+@charset "UTF-8";
 .header-one {
   font-family: Quicksand;
   font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 30px;
 }
 
 .header-two {
   font-family: Quicksand;
   font-size: 19px;
-  font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 24px;
 }
 
 .header-three {
   font-family: Montserrat;
   font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 15px;
 }
 
-.body-standart {
+.text-standart {
   font-family: Montserrat;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 24px;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url("./fonts/9261.eot");
+  src: local("☺"), url("./fonts/9261.woff") format("woff"), url("./fonts/9261.ttf") format("truetype"), url("./fonts/9261.svg") format("svg");
 }
 
 body {
   width: 1440px;
   height: 900px;
-  border: 1px solid #000;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
@@ -41,6 +42,7 @@ body {
       grid-template-columns: 150px 1fr 191px;
   -ms-grid-rows: 145px 1fr 145px;
       grid-template-rows: 145px 1fr 145px;
+  color: #1F2041;
 }
 
 .wrapper {
@@ -50,7 +52,6 @@ body {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  border: 1px solid #000;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (1fr)[7];
@@ -66,10 +67,55 @@ body {
   display: flex;
 }
 
+.TCAS-cont--to-the-right {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
 .TCAS-cont__left__square {
   height: 70px;
   width: 70px;
   border-radius: 6px;
-  background: #000;
+  background-color: #1F2041;
+}
+
+.TCAS-cont__left__text-block {
+  background: #bdc3c7;
+}
+
+.TCAS-cont__right {
+  background: #bdc3c7;
+}
+
+.TCAS-cont__right__text {
+  font-weight: 400;
+}
+
+.dark-shade-total {
+  opacity: 100%;
+}
+
+.dark-shade-almost-total {
+  opacity: 75%;
+}
+
+.dark-shade-half {
+  opacity: 50%;
+}
+
+.dark-shade-quater {
+  opacity: 25%;
+}
+
+.dark-shade-light {
+  opacity: 5%;
+}
+
+.purple {
+  background: #BC9CFF;
+}
+
+.green {
+  background: #6FCF97;
 }
 /*# sourceMappingURL=style.css.map */
