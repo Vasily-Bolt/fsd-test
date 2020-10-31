@@ -11,7 +11,7 @@
     'body-head1' : ['H1','This one is the sub-section or widget title'],
     'body-head2' : ['H2','Next one is the item title inside widgets'],
     'body-head3' : ['H3','This is a label or CTA text'],
-    'body' : ['Body','This is the body text which is used for most of the design, like paragraphs, lists, etc.']
+    'body-standart' : ['Body','This is the body text which is used for most of the design, like paragraphs, lists, etc.']
     }
 
 - var DraMeSquare = false
@@ -44,9 +44,9 @@ mixin colorCont(modificator, values)
       //-Если это показатель цвета/тени
       - if (DrawMeSquare)
         //-Показываем заголовок
-        div(class='header-two TCAS-cont__right__title')= values[0]
+        div(class='body-head2 TCAS-cont__right__title')= values[0]
         //-текст (цвет или надпись текстом)
-        div(class='header-two TCAS-cont__right__text')= values[1]
+        div(class='body-head2 TCAS-cont__right__text')= values[1]
       - else
         //-текст (цвет или надпись текстом)
         div(class='TCAS-cont__right__text ' + modificator)= values[1]
