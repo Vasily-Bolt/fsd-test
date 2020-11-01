@@ -37,19 +37,23 @@ mixin colorCont(modificator, values)
         div(class='TCAS-cont__left__square ' + modificator)
       - else
         //-Блок с текстом H_,BODY
-        div(class='TCAS-cont__left__text-block ' + modificator)= values[0]
+        div(class='TCAS-cont__left__text-block ' + modificator)
+          p= values[0]
     
     //-правый контейнер для текста
     div(class='TCAS-cont__right')
       //-Если это показатель цвета/тени
       - if (DrawMeSquare)
         //-Показываем заголовок
-        div(class='body-head2 TCAS-cont__right__title')= values[0]
+        div(class='body-head2 TCAS-cont__right__title')
+          p= values[0]
         //-текст (цвет или надпись текстом)
-        div(class='body-head2 TCAS-cont__right__text')= values[1]
+        div(class='body-head2 TCAS-cont__right__text')
+          p= values[1]
       - else
         //-текст (цвет или надпись текстом)
-        div(class='TCAS-cont__right__text ' + modificator)= values[1]
+        div(class='TCAS-cont__right__text ' + modificator)
+          p= values[1]
 
 <!DOCTYPE html>
 
