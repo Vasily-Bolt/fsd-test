@@ -47,13 +47,13 @@ mixin colorCont(modificator, values)
         //-Показываем заголовок
         div(class='body-head2 TCAS-cont__right__title')
           p= values[0]
-        //-текст (цвет или надпись текстом)
+        //-текст (код цвета)
         div(class='body-head2 TCAS-cont__right__text')
           p= values[1]
       - else
-        //-текст (цвет или надпись текстом)
-        div(class='TCAS-cont__right__title ' + modificator)
-          p= values[1]
+        //-текст (надпись текстом)
+        div(class='TCAS-cont__right__title TCAS-cont__right__title--' + modificator)
+          p(class=modificator)= values[1]
 
 <!DOCTYPE html>
 

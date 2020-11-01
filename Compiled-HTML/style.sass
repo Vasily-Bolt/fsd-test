@@ -19,27 +19,54 @@ body
   grid-auto-flow: column
   grid-row-gap: 20px
 
+//Блоки 
 .TCAS-cont
   display: flex
 
 .TCAS-cont--to-the-right
-  justify-self: end
+  justify-content: flex-end
+  margin-bottom: 50px
 
+//Левая часть блоков
 .TCAS-cont__left
+  flex: 0 0 70px
+  text-align: right
 
+//Левая часть блоков - Квадрат с цветом/прозрачностью
 .TCAS-cont__left__square
   height: 70px
   width: 70px
   border-radius: 6px
   background-color: $all-document-text-color
 
+//Левая часть блоков - Текст для блоков справа
 .TCAS-cont__left__text-block
-  background: #bdc3c7
-.TCAS-cont__right
+  font-weight: normal
+  opacity: $dark-shade-quater
+.TCAS-cont__left__text-block p
+  font-family: Montserrat
+
+//Правая часть блоков
+.TCAS-cont__right 
+  flex: 0 0 365px
   background: #bdc3c7
 
+//Правая часть блоков - Заголовок и текст
 .TCAS-cont__right__title
+  letter-spacing: -.5px
   
+//Правая часть блоков - модификатор заголовка H1 правых блоков
+.TCAS-cont__right__title--body-head1
+  max-width: 336px
+
+
+//Правая часть блоков - модификатор заголовка H2 правых блоков
+.TCAS-cont__right__title--body-head2  
+
+//Правая часть блоков - модификатор заголовка H3 правых блоков
+.TCAS-cont__right__title--body-head3
+
+//Правая часть блоков - текст описания цвета
 .TCAS-cont__right__text
   font-weight: 400
   

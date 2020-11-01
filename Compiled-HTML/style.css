@@ -49,6 +49,7 @@ h1, h2, h3, p {
   font-family: Quicksand;
   font-size: 24px;
   font-weight: bold;
+  line-height: 30px;
 }
 
 .body-head2 {
@@ -104,8 +105,17 @@ body {
 }
 
 .TCAS-cont--to-the-right {
-  -ms-grid-column-align: end;
-      justify-self: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 50px;
+}
+
+.TCAS-cont__left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 70px;
+          flex: 0 0 70px;
+  text-align: right;
 }
 
 .TCAS-cont__left__square {
@@ -116,11 +126,27 @@ body {
 }
 
 .TCAS-cont__left__text-block {
-  background: #bdc3c7;
+  font-weight: normal;
+  opacity: 25%;
+}
+
+.TCAS-cont__left__text-block p {
+  font-family: Montserrat;
 }
 
 .TCAS-cont__right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 365px;
+          flex: 0 0 365px;
   background: #bdc3c7;
+}
+
+.TCAS-cont__right__title {
+  letter-spacing: -.5px;
+}
+
+.TCAS-cont__right__title--body-head1 {
+  max-width: 336px;
 }
 
 .TCAS-cont__right__text {
