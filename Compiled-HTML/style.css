@@ -98,61 +98,6 @@ body {
   grid-row-gap: 20px;
 }
 
-.TCAS-cont {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.TCAS-cont--to-the-right {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-bottom: 50px;
-}
-
-.TCAS-cont__left {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 70px;
-          flex: 0 0 70px;
-  text-align: right;
-}
-
-.TCAS-cont__left__square {
-  height: 70px;
-  width: 70px;
-  border-radius: 6px;
-  background-color: #1F2041;
-}
-
-.TCAS-cont__left__text-block {
-  font-weight: normal;
-  opacity: 25%;
-}
-
-.TCAS-cont__left__text-block p {
-  font-family: Montserrat;
-}
-
-.TCAS-cont__right {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 365px;
-          flex: 0 0 365px;
-  background: #bdc3c7;
-}
-
-.TCAS-cont__right__title {
-  letter-spacing: -.5px;
-}
-
-.TCAS-cont__right__title--body-head1 {
-  max-width: 336px;
-}
-
-.TCAS-cont__right__text {
-  font-weight: 400;
-}
-
 .dark-shade-total {
   opacity: 100%;
 }

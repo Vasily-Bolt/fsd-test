@@ -14,46 +14,46 @@
     'body-standart' : ['Body','This is the body text which is used for most of the design, like paragraphs, lists, etc.']
     }
 
-- var DraMeSquare = false
-- var Container = ''
+//- - var DraMeSquare = false
+//- - var Container = ''
 
-mixin colorCont(modificator, values)
-  - if (modificator.includes('body'))
-    - DrawMeSquare = false  
-  - else
-    - DrawMeSquare = true
+//- mixin colorCont(modificator, values)
+//-   - if (modificator.includes('body'))
+//-     - DrawMeSquare = false  
+//-   - else
+//-     - DrawMeSquare = true
 
-  - if (DrawMeSquare)
-    - Container ='TCAS-cont'
-  - else
-    - Container = 'TCAS-cont TCAS-cont--to-the-right'
+//-   - if (DrawMeSquare)
+//-     - Container ='TCAS-cont'
+//-   - else
+//-     - Container = 'TCAS-cont TCAS-cont--to-the-right'
 
-  div(class=Container)
-    //-левый контейнер (квадрат или заголовки)
-    div(class='TCAS-cont__left') 
-      //-Если это показатель цвета/тени
-      - if (DrawMeSquare)
-        //-квадрат с цветом
-        div(class='TCAS-cont__left__square ' + modificator)
-      - else
-        //-Блок с текстом H_,BODY
-        div(class='TCAS-cont__left__text-block ' + modificator)
-          p= values[0]
+//-   div(class=Container)
+//-     //-левый контейнер (квадрат или заголовки)
+//-     div(class='TCAS-cont__left') 
+//-       //-Если это показатель цвета/тени
+//-       - if (DrawMeSquare)
+//-         //-квадрат с цветом
+//-         div(class='TCAS-cont__left__square ' + modificator)
+//-       - else
+//-         //-Блок с текстом H_,BODY
+//-         div(class='TCAS-cont__left__text-block ' + modificator)
+//-           p= values[0]
     
-    //-правый контейнер для текста
-    div(class='TCAS-cont__right')
-      //-Если это показатель цвета/тени
-      - if (DrawMeSquare)
-        //-Показываем заголовок
-        div(class='body-head2 TCAS-cont__right__title')
-          p= values[0]
-        //-текст (код цвета)
-        div(class='body-head2 TCAS-cont__right__text')
-          p= values[1]
-      - else
-        //-текст (надпись текстом)
-        div(class='TCAS-cont__right__title TCAS-cont__right__title--' + modificator)
-          p(class=modificator)= values[1]
+//-     //-правый контейнер для текста
+//-     div(class='TCAS-cont__right')
+//-       //-Если это показатель цвета/тени
+//-       - if (DrawMeSquare)
+//-         //-Показываем заголовок
+//-         div(class='body-head2 TCAS-cont__right__title')
+//-           p= values[0]
+//-         //-текст (код цвета)
+//-         div(class='body-head2 TCAS-cont__right__text')
+//-           p= values[1]
+//-       - else
+//-         //-текст (надпись текстом)
+//-         div(class='TCAS-cont__right__title TCAS-cont__right__title--' + modificator)
+//-           p(class=modificator)= values[1]
 
 <!DOCTYPE html>
 
@@ -66,9 +66,9 @@ html(lang="en")
     title 134
   body
     .wrapper
-      each val, key in ColorsAndShades2
-        |
-        |
-        |
-        //-контейнер с информацией по цветам/шрифтам The Colors And Sizes
-        +colorCont(key, val)
+      //- each val, key in ColorsAndShades2
+      //-   |
+      //-   |
+      //-   |
+      //-   //-контейнер с информацией по цветам/шрифтам The Colors And Sizes
+      //-   +colorCont(key, val)
