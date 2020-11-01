@@ -3,26 +3,42 @@
   -moz-box-sizing: border-box
   box-sizing: border-box
 
+html
+  font-size: 16px
+  
 h1, h2, h3, p
   margin: 0
   padding: 0
 
-.body-head1
+@mixin header-one
   font-family: Quicksand
-  font-size: 24px
+  font-size: 1.5rem //24px
   font-weight: bold
-  line-height: 30px
+  line-height: 1.875rem //30px
 
-.body-head2
+@mixin header-two
   font-family: Quicksand
-  font-size: 19px
+  font-size: 1.1875rem //19px
   font-weight: bold
+  line-height: 1.5rem //24px
 
-.body-head3
+@mixin header-three
   font-family: Montserrat
-  font-size: 12px
+  font-size: 0.75rem //12px
   font-weight: bold
+  line-height: 0.9375rem //15px
+  text-transform: uppercase
 
-.body-standart
+@mixin body-text
   font-family: Montserrat
-  font-size: 14px
+  font-size: 0.875rem //14px
+  line-height: 1.5rem //24px
+
+h1
+  @include header-one
+  
+h2
+  @include header-two
+
+h3
+  @include header-three  

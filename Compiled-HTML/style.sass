@@ -1,24 +1,61 @@
 @import ./_fonts
 @import ./_variables
 @import ./_glob-classes
-  
+
 body
   width: 1440px
   height: 900px
   margin: 0 auto
   display: grid
-  grid-template-columns: 150px 1fr 191px
-  grid-template-rows: 145px 1fr 145px
+  grid-template-columns: 9.375rem 1fr 11.9375rem //151px и 191px
+  grid-template-rows: 9.0625rem 1fr 9.0625rem //145px
   color: $all-document-text-color
 
 .wrapper
   grid-column: 2/3
   grid-row: 2/3
   display: grid
-  grid-template: repeat(7,1fr) / repeat(2, 1fr)
-  grid-auto-flow: column
-  grid-row-gap: 20px
+  grid-template: 1fr / repeat(2, 1fr)
 
+//Блок слева
+.TCAS-cont
+  width: 100%
+  height: 100%
+
+//Блок с информацией о цвете/заголовках
+.TCAS-block
+  height: 4.375rem
+  display: flex
+  //width: 16.875rem
+
+//Левая часть
+.TCAS-block__left
+
+//Квадрат в левой части
+.TCAS-block__left--square
+  width: 4.375rem
+  height: 100%
+  background-color: $all-document-text-color
+  border-radius: 6px
+
+//Текст в левой части
+.TCAS-block__left--square
+  width: 4.375rem
+  height: 100%
+  color: $all-document-text-color
+  
+//Правая часть
+.TCAS-block__right
+  padding-left: 2.5rem
+  padding-top: .625rem
+
+.TCAS-block__right p
+  @include header-two
+  font-weight: normal
+  line-height: 2.0625rem //33px
+  letter-spacing: -1px
+
+//Блок справа
 // //Блоки 
 // .TCAS-cont
 //   display: flex

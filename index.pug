@@ -1,18 +1,29 @@
 //-Объект с массивом данных по вариациям прозрачности, цветов и размеров текста
 - 
-  var ColorsAndShades2 = {
+  var ColorsAndShades = {
     'dark-shade-total' : ['Dark Shade 100%','#1F2041'],
     'dark-shade-almost-total' : ['Dark Shade 75%','#1F2041'],
     'dark-shade-half' : ['Dark Shade 50%','#1F2041'],
     'dark-shade-quater' : ['Dark Shade 25%','#1F2041'],
     'dark-shade-light' : ['Dark Shade 5%','#1F2041'],
     'purple' : ['Purple','#BC9CFF'],
-    'green' : ['Green','#6FCF97'],
+    'green' : ['Green','#6FCF97']
+    }
+  
+  var Headers = {
     'body-head1' : ['H1','This one is the sub-section or widget title'],
     'body-head2' : ['H2','Next one is the item title inside widgets'],
     'body-head3' : ['H3','This is a label or CTA text'],
     'body-standart' : ['Body','This is the body text which is used for most of the design, like paragraphs, lists, etc.']
     }
+
+include TCAS.pug
+//- mixin colorCont(modificator, values)
+//-   .TCAS-block
+//-     .TCAS-block__left
+//-       div(class='TCAS-block__square TCAS-block__square--' + modificator)
+//-     .TCAS-block__right
+
 
 //- - var DraMeSquare = false
 //- - var Container = ''
@@ -63,9 +74,22 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet", href="normalize.css")
     link(rel="stylesheet", href="style.css")
-    title 134
+    title 138
   body
     .wrapper
+      .TCAS-cont
+        each val, key in ColorsAndShades
+          +TCAS-colors-block(key, val)
+          
+      .TCAS-cont
+        each val, key in ColorsAndShades
+          +TCAS-colors-block(key, val)
+      //-контейнер с информацией по цветам/шрифтам The Colors And Sizes
+      //- .TCAS-cont
+      //-   each val, key in ColorsAndShades
+      //-     +colorCont(key, val)
+      //- //-контейнер с информацией по цветам/шрифтам The Colors And Sizes
+      //- .TCAS-cont
       //- each val, key in ColorsAndShades2
       //-   |
       //-   |
