@@ -26,7 +26,7 @@ body
 .TCAS-block
   height: 4.375rem
   display: flex
-  //width: 16.875rem
+  width: 27.125rem //474px
 
 //Левая часть
 .TCAS-block__left
@@ -39,7 +39,7 @@ body
   border-radius: 6px
 
 //Текст в левой части
-.TCAS-block__left--square
+.TCAS-block__left--text
   width: 4.375rem
   height: 100%
   color: $all-document-text-color
@@ -55,57 +55,14 @@ body
   line-height: 2.0625rem //33px
   letter-spacing: -1px
 
-//Блок справа
-// //Блоки 
-// .TCAS-cont
-//   display: flex
+.TCAS-cont--right
+  display: flex
+  flex-wrap: wrap
+  justify-content: flex-end
+  align-content: flex-start
 
-// .TCAS-cont--to-the-right
-//   justify-content: flex-end
-//   margin-bottom: 50px
-
-// //Левая часть блоков
-// .TCAS-cont__left
-//   flex: 0 0 70px
-//   text-align: right
-
-// //Левая часть блоков - Квадрат с цветом/прозрачностью
-// .TCAS-cont__left__square
-//   height: 70px
-//   width: 70px
-//   border-radius: 6px
-//   background-color: $all-document-text-color
-
-// //Левая часть блоков - Текст для блоков справа
-// .TCAS-cont__left__text-block
-//   font-weight: normal
-//   opacity: $dark-shade-quater
-// .TCAS-cont__left__text-block p
-//   font-family: Montserrat
-
-// //Правая часть блоков
-// .TCAS-cont__right 
-//   flex: 0 0 365px
-//   background: #bdc3c7
-
-// //Правая часть блоков - Заголовок и текст
-// .TCAS-cont__right__title
-//   letter-spacing: -.5px
-  
-// //Правая часть блоков - модификатор заголовка H1 правых блоков
-// .TCAS-cont__right__title--body-head1
-//   max-width: 336px
-
-
-// //Правая часть блоков - модификатор заголовка H2 правых блоков
-// .TCAS-cont__right__title--body-head2  
-
-// //Правая часть блоков - модификатор заголовка H3 правых блоков
-// .TCAS-cont__right__title--body-head3
-
-// //Правая часть блоков - текст описания цвета
-// .TCAS-cont__right__text
-//   font-weight: 400
+.TCAS-block--header-block
+  justify-content: flex-end
   
 .dark-shade-total
   opacity: $dark-shade-total

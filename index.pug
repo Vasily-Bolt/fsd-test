@@ -81,9 +81,9 @@ html(lang="en")
         each val, key in ColorsAndShades
           +TCAS-colors-block(key, val)
           
-      .TCAS-cont
-        each val, key in ColorsAndShades
-          +TCAS-colors-block(key, val)
+      div(class='TCAS-cont TCAS-cont--right')
+        each val, key in Headers
+          +TCAS-headers-block(key, val)
       //-контейнер с информацией по цветам/шрифтам The Colors And Sizes
       //- .TCAS-cont
       //-   each val, key in ColorsAndShades

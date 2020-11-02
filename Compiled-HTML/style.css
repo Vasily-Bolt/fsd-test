@@ -108,6 +108,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 27.125rem;
 }
 
 .TCAS-block__left--square {
@@ -117,7 +118,7 @@ body {
   border-radius: 6px;
 }
 
-.TCAS-block__left--square {
+.TCAS-block__left--text {
   width: 4.375rem;
   height: 100%;
   color: #1F2041;
@@ -136,6 +137,25 @@ body {
   font-weight: normal;
   line-height: 2.0625rem;
   letter-spacing: -1px;
+}
+
+.TCAS-cont--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.TCAS-block--header-block {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .dark-shade-total {
